@@ -1,51 +1,51 @@
-/* TODO: what type of selector is this? */
+/* Universal selector targeting the whole page */
 * {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* TODO: what type of selector is this? */
+/* Element selector targeting all <h1> elements */
 h1 {
     color: blue;
 }
-
+/* Element selector targeting all <p> elements */
 p {
     margin: 10px 0;
 }
-
+/* Element selector targeting all <ul> elements */
 ul {
     margin: 20px 0;
     padding-left: 20px;
 }
-
+/* Element selector targeting all <li> elements */
 li {
     margin: 5px 0;
 }
-
+/* Element selector targeting all <a> elements */
 a {
     color: green;
 }
 
-/* TODO: what type of selector is this? */
+/* Class selector targeting elements with class 'highlight' */
 .highlight {
     background-color: yellow;
     font-weight: bold;
 }
-
+/* Class selector targeting elements with class 'new' */
 .new {
     color: red;
 }
-
+/* Class selector targeting elements with class 'something' */
 .something     {
     color: purple;
 }
-
+/* Class selector targeting elements with class 'special' */
 .special {
     color: purple;
 }
 
-/* TODO: what type of selector is this? */
+/* ID selector targeting elements with ID 'uniqueDiv' */
 #uniqueDiv {
     color: red;
     font-size: 20px;
