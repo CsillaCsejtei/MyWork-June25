@@ -67,6 +67,12 @@ img {
     text-align: center;
     border: 2px solid black;
     /* Old styling */
-   
+
     /* Add New styling here */
+}
+.product{
+    transition:transform 2s ease;
+}
+.product:hover{
+    transform: rotate(360deg) scale(1.2)
 }
