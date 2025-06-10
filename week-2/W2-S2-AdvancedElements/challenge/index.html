@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Form</title>
+  </head>
+  <body>
+    <form class="form">
+      <div>
+        <label for="name">Full name:</label>
+        <br />
+        <input type="text" name="name" class="name" required/>
+      </div>
+
+      <div>
+        <label for="email">Email address:</label>
+        <br />
+        <input type="email" name="email" class="email" required />
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <br />
+        <input type="password" name="password" class="password" required/>
+        <br />
+      </div>
+      <div>
+        <label for="media">How did you hear about me?</label>
+        <br />
+        <select name="media" id="media">
+          <option value="facebook">Facebook</option>
+          <option value="instagram">Instagram</option>
+          <option value="search">Search engine</option>
+          <option value="word-of-mouth">Word of mouth</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div>
+        <input type="button" value="Submit" class="button"/>
+      </div>
+    </form>
+  </body>
+</html>
