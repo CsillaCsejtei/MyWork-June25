@@ -1,76 +1,79 @@
 /* General styling */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #f4f4f4;
 }
 
 header {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
 }
 
 /* Flexbox navigation */
 .navbar {
-    /* TODO: explain the purpose of the following properties */
-    display: flex;
-
-    justify-content: center;
-    background-color: #007BFF;
-    padding: 10px;
+  /* TODO: explain the purpose of the following properties */
+  display: flex;
+  /*it puts the navbar into flexbox*/
+  justify-content: center;
+  /*It puts it into the middle and arrange it horizontally if we decrease the size of the screen*/
+  background-color: #007bff;
+  padding: 10px;
 }
 
 .navbar a {
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .navbar a:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
 /* Flexbox content area */
 .content {
-    
-    /* TODO: explain the purpose of the following properties */
-    flex-wrap: wrap;
-    display: flex;
-
-    justify-content: space-around;
-    align-items: center;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: white;
-    max-width: 1200px;
+  /* TODO: explain the purpose of the following properties */
+  flex-wrap: wrap;
+  display: flex;
+  /*the content is wrapped in multiple lines */
+  justify-content: space-around;
+  /*the items will have space beetwen them horizontally depends on the screen*/
+  align-items: center;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  max-width: 1200px;
 }
 
 /* Flexbox items */
 .box {
-    background-color: #28a745;
-    color: white;
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-    border-radius: 5px;
+  background-color: #28a745;
+  color: white;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 5px;
 
-    /* TODO: explain the purpose of the following properties */
-    flex: 1 1 200px;
+  /* TODO: explain the purpose of the following properties */
+  flex: 1 1 200px;
+  /* 1 item grows and 1 item shrinks: all items shrink and grow in the same time, 
+    initial size is 200px,*/
 }
 
 .box:hover {
-    background-color: #218838;
+  background-color: #218838;
 }
 
 /* Footer styling */
 footer {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    margin-top: 20px;
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  margin-top: 20px;
 }
