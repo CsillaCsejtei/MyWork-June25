@@ -43,7 +43,7 @@ header {
   display: flex;
   /*the content is wrapped in multiple lines */
   justify-content: space-around;
-  /*the items will have space beetwen them horizontally depends on the screen*/
+  /*the items will have space around them horizontally and vertically depends on the screen*/
   align-items: center;
   margin: 20px auto;
   padding: 20px;
