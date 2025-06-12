@@ -17,17 +17,26 @@ body {
     display: flex;
 
     /* TODO: what happens when we change this? */
-    flex-direction: row;
+    flex-direction:row;
+    /*from row to column, the boxes will be top of each other in vertically
+      if column-reverse, the order will change in column*/
     width: 80%;
     height: 300px;
     background-color: #ddd;
     border: 2px solid #ccc;
 
     /* Flexbox alignment properties */
-    justify-content: space-around;
+    justify-content: space-between;
     /* TODO: flex-start, center, space-between */
+    /*flex-start: put next to each other on the left, 
+    center: next to each other in the center,
+    space-between: 1. box is far left, 2. box in the middle, 3. far right
+    */
     align-items: center;
     /* TODO: flex-start, center, flex-end */
+    /* flex-start: the boxes get into the top of the container,
+    center: the boxes get into the center of the container,
+    flex-end: the boxes get into the bottom of the container*/
 }
 
 .box {
