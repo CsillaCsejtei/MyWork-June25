@@ -117,3 +117,21 @@ body {
 .complete-btn:hover {
     background-color: #45a049;
 }
+@media screen and (max-width: 768px){
+    .dashboard-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "header" 
+            "main"            
+            "sidebar";
+        height: auto;
+    }
+
+    .sidebar nav ul{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+}
