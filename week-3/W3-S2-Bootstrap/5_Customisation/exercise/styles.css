@@ -1,1 +1,18 @@
 /* Custom Styles for overriding Bootstrap colors */
+.btn-primary{
+  background-color: purple !important;
+  font-style: italic;
+}
+
+.btn-secondary{
+  background-color: aqua !important;
+  font-size: 12px;
+}
+
+.text-dark{
+  background-color: yellow !important;
+}
+
+.bg-secondary{
+  background-color: rgb(56, 30, 255) !important;
+}
