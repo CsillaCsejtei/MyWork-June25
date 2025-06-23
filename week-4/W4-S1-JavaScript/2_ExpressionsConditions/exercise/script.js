@@ -12,13 +12,17 @@ let isGreater = num1 > 5; // Checks if num1 is greater than 5
 console.log("Is num1 greater than 5?", isGreater); // true
 
 // TODO: Comparison using '<='
+let isLessOrEqual = num1 <= 2;
+console.log(`Is ${num1} less or equal than 2? ${isLessOrEqual}`);
+
 
 // 3. Strict vs. Value Comparison
 // TODO: Value comparison using '=='
+console.log(num1==num2);
 
 // TODO: Strict comparison using '==='
 // 4. Conditional Statements
-
+console.log(num1===num2);
 // Example of an if/else condition using a comparison
 if (num1 === 10) {
   console.log("num1 is exactly equal to 10 (strict comparison)."); // This block will run
@@ -27,7 +31,11 @@ if (num1 === 10) {
 }
 
 // Another conditional statement to check if num1 is greater than 15
-
+if(num1>15){
+  console.log("num1 is greater than 15");
+} else{
+  console.log("num1 is not greater than 15")
+}
 // 5. TODO - Conditional Statements with Logical Operators
 if (num2 === "10" && num1 === "10") {
   console.log("num1 is less than 15 and num2 is exactly equal to '10'.");
@@ -38,5 +46,11 @@ if (num1 < 15 && (num2 === "10" || num1 === 10)) {
 }
 
 // TODO: what's the difference between the && and || operators?
+// "&&" operator is "and" operator, "||" operator is "or"
 
 /// TODO: Add a conditional statement to check if num1 is less than 15 and num2 is exactly equal to '10'.
+if (num1<15 && num2 === "10"){
+  console.log(true)
+} else{
+  console.log(false)
+}
