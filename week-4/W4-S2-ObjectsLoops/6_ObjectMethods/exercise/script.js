@@ -36,7 +36,8 @@ let food = fruits.concat(vegetables);
 console.log("After concat:", food); // ["mango", "banana", "carrot", "potato"]
 
 // 7. Array.indexOf() - TODO: WHat does this method do? What is the output?
-//Returns the index of the element. In this case is 1.
+//returns the first index at which a given element can be found in the array, or -1 if it is not present.
+
 let index = food.indexOf("banana");
 console.log("Index of banana:", index); // 1
 
