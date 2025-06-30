@@ -33,6 +33,9 @@ const renderRepos = (repos) => {
 
     // this logs the name of each repository
     //TODO: log out the full name of each repository and whether it is a private or public repository
+    
+    console.log(repo.visibility);
     //TODO: print out Avatar URL and login of the owner
+    console.log(repo.owner.avatar_url);
   });
 };
