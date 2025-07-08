@@ -5,6 +5,9 @@ class Person:
 
     def introduce(self):
         print(f"Hi, my name is {self.name} and I am {self.age} years old.")
+        
+    def speak(self):
+        print("Hello! I'm just a regular person.")
 
 
 class Student(Person):
@@ -16,7 +19,9 @@ class Student(Person):
         super().introduce()
         print(f"My student ID is {self.student_id}.")
 
-
+    def speak(self):
+        print("Hey there! I'm a student.")
+        
 class Manager(Person):
     def __init__(self, name, age, department):
         super().__init__(name, age)
@@ -25,15 +30,18 @@ class Manager(Person):
     def introduce(self):
         super().introduce()
         print(f"I work in the {self.department} department.")
+        
+    def speak(self):
+        print("Hello! I am a manager.")
 
 #Demo:
-if __name__ == "__main__":
-    person = Person("Alice", 28)
-    student = Student("Bob", 22, 12345)
-    manager = Manager("Charlie", 40, "Engineering")
+people = [
+    Person("Alice", 28),
+    Student("Bob", 22, 12345),
+    Manager("Charlie", 40, "Engineering")
+]
 
+for person in people:
     person.introduce()
-    print() 
-    student.introduce()
+    person.speak()
     print()
-    manager.introduce()
