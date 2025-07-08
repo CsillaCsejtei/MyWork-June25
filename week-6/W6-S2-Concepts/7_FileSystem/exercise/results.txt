@@ -1,0 +1,4 @@
+budget.xlsx
+family_photo.jpg
+project_notes.txt
+resume.pdf
