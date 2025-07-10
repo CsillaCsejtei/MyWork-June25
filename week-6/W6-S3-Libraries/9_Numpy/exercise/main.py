@@ -4,7 +4,7 @@ print("Welcome to NumPy Basics! Let's explore some common use cases.\n")
 
 # 1. Creating an Array
 print("Step 1: Creating an Array")
-numbers = np.array([5, 10, 15, 20, 25])
+numbers = np.array([5, 10, 15, 2, 25])
 print("Array:", numbers)
 
 # TODO: Try changing the numbers in the array above and re-run the script!
@@ -19,10 +19,13 @@ print("Minimum Value:", np.min(numbers))
 
 # TODO: Can you create another array and find its sum and mean?
 print("\n")
-
+new_numbers = np.array([3, 6, 9, 12, 15])
+print("Sum of new array:", np.sum(new_numbers))
+print("Mean of new array:", np.mean(new_numbers))
+print("\n")
 # 3. Generating Random Numbers
 print("Step 3: Generating Random Numbers")
-random_numbers = np.random.randint(1, 50, size=5)  # 5 random numbers between 1 and 50
+random_numbers = np.random.randint(1, 10, size=5)  # 5 random numbers between 1 and 50
 print("Random Numbers:", random_numbers)
 
 # TODO: Try changing the range (e.g., 1-100) and size (e.g., 10) of the random numbers.
@@ -36,19 +39,21 @@ print("Transpose (Flip rows and columns):\n", matrix.T)
 
 # Exercise: Create a 3x3 matrix and find its transpose!
 print("\n")
-
+matrix3 =np.array([[1, 2,3], [4,5,6],[7,8,9]])
+print("Matrix 3x3: \n", matrix3)
+print("\n")
 # 5. Sorting an Array
 print("Step 5: Sorting an Array")
-unsorted_array = np.array([12, 5, 18, 7, 3])
+unsorted_array = np.array([12, 5, 1, 7, 3])
 print("Unsorted:", unsorted_array)
 print("Sorted:", np.sort(unsorted_array))
 
-# TODO: Change the numbers in `unsorted_array` and see how sorting works!
+# TODO: Change the numbers in `unsorted_array` and see how sorting works! - it stays in the same order.
 print("\n")
 
 # 6. Challenge: Find Even Numbers in an Array
 print("Step 6: Find Even Numbers in an Array")
-arr = np.array([4, 9, 12, 15, 20, 25, 30])
+arr = np.array([4, 9, 12, 15, 20, 25, 30, 66, 67, 99, 100])
 even_numbers = arr[arr % 2 == 0]  # Filtering even numbers
 print("Even Numbers:", even_numbers)
 
