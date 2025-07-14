@@ -20,13 +20,16 @@ fs.readFile(filePath, "utf8", (err, data) => {
   }
 
   // TODO: convert JSON to object
-  const obj = JSON.parse(data);
+  //const obj = JSON.parse(data);
+  const messages = JSON.parse(data);
 
   // TODO: push the message to the object
-  obj.messages.push(message);
+  // obj.messages.push(message);
+  messages.push(message);
 
   // TODO: convert object back to JSON so you can write it back to the file
-  const json = JSON.stringify(obj, null, 2);
+  //const json = JSON.stringify(obj, null, 2);
+  const json = JSON.stringify(messages, null, 2);
 
   // Write the message to message.txt
   fs.writeFile(filePath, json, (err) => {
