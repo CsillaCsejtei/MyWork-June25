@@ -1,5 +1,6 @@
 // import all the functions you need from the math module
-const { add, subtract, multiply, divide } = require("./math");
+import {add, subtract, multiply, divide} from "./math.js";
+//const { add, subtract, multiply, divide } = require("./math");
 
 console.log(add(1, 2)); // 3
 
