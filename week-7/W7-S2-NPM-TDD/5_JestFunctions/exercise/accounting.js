@@ -6,7 +6,7 @@ function calculateGross(amount, vatPercentage = 0.2) {
     throw new Error("Both amount and vatPercentage must be numbers");
   }
 
-  return amount + amount * vatPercentage;
+  return Math.round((amount + amount * vatPercentage) * 100) / 100;
 }
 
 function calculateNet(amount, vatPercentage = 0.2) {
@@ -23,7 +23,8 @@ function calculateVAT(amount, vatPercentage = 0.2) {
     throw new Error("Both amount and vatPercentage must be numbers");
   }
 
-  return amount * vatPercentage;
+    return Math.round((amount * vatPercentage) * 100) / 100;
+  
 }
 
 module.exports = { calculateGross, calculateNet, calculateVAT };

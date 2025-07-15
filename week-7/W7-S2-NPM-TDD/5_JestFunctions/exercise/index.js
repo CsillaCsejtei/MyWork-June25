@@ -1,7 +1,7 @@
 const { calculateGross, calculateNet, calculateVAT } = require("./accounting");
 
 const item = 100;
-const gross = calculateGross(item, "hello");
+const gross = calculateGross(item);
 const vat = calculateVAT(item);
 
 console.log(
