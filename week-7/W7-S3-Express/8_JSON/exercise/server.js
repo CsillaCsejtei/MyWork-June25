@@ -61,8 +61,27 @@ app.get("/data/:id", (req, res) => {
 });
 
 // TODO: Handle PUT request to update data by ID
+app.put("/data/:id", (req, res) => {
+  const data = readData();
+  const index = data.findIndex((item) => item.id === req.params.id);
+  if (index === -1) return res.status(404).json({ message: "Data not found" });
+  data[index] = { ...data[index], ...req.body };
+  writeData(data);
+  res.json({ message: "Data updated successfully", data: data[index] });
+});
 
 // TODO: Handle DELETE request to delete data by ID
+app.delete("/data/:id", (req, res) => {
+  const data = readData();
+  const index = data.findIndex((item) => item.id === req.params.id);
+  if (index === -1) return res.status(404).json({ message: "Data not found" });
+  const deletedItem = data.splice(index, 1);
+  writeData(data);
+  res.json({
+    message: "Data deleted successfully",
+    deletedItem: deletedItem[0],
+  });
+});
 
 // Handle POST request at the /echo route
 app.post("/echo", (req, res) => {
