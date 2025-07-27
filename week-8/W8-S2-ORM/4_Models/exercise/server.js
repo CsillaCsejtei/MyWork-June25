@@ -7,8 +7,8 @@ const bodyParser = require("body-parser");
 const app = express();
 app.use(bodyParser.json());
 
-const password = "<add your MySQL password here>";
-if (password === "<add your MySQL password here>") {
+const password = "Rohatalma77.";
+if (password === "password1") {
   console.error("Please update MySQL password in server.js");
   process.exit(1);
 }
